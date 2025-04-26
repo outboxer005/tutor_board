@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - Field Project</title>
-  <link rel="stylesheet" href="./assets/css/maincss.css">
-  <link rel="stylesheet" href="./assets/css/buttoncss.css">
+  <link rel="stylesheet" href="./assets/css/maincss.css" />
+  <link rel="stylesheet" href="./assets/css/buttoncss.css" />
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.intro {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+/* Feature Cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features li {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.features li:hover {
+  transform: translateY(-5px);
+}
+
+/* Descriptions */
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #eeff00;
+}
+
+/* Contributors */
+.contributors {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contributors li {
+  background-color: #e9ecef;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+</style>
 </head>
 <body>
   <nav class="navbar">
@@ -20,8 +100,10 @@
       </ul>
     </div>
   </nav>
+
   <section class="hero" id="about">
     <p class="intro">About Field Project</p>
+    
     <h3>Features:</h3>
     <ul class="features">
       <li>Smooth Handling</li>
@@ -29,14 +111,17 @@
       <li>Screen Share Capability</li>
       <li>Undo & Redo Functionality</li>
     </ul>
+
     <p class="description">
       Whether you are teaching or learning, our board is built to support real-time collaboration with interactive tools, ensuring that the tutoring experience is both engaging and effective.
     </p>
+    
     <p class="description">
-      This project is  developed by Vignan University, CSE Section S. Contributors include:
+      This project is developed by Vignan University, CSE Section S. Contributors include:
     </p>
+    
     <ul class="contributors">
-      <li>231FA04g32</li>
+      <li>231FA04G32</li>
       <li>231FA04C71</li>
       <li>231FA04E83</li>
       <li>231FA04F93</li>
